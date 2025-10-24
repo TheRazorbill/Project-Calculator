@@ -1,90 +1,99 @@
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .calculator {
-  background-color: #222;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  width: 280px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    width: 280px;
 }
 
 #inputBox {
-  width: 100%;
-  height: 60px;
-  border: none;
-  outline: none;
-  background-color: #333;
-  color: #fff;
-  font-size: 2rem;
-  text-align: right;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 15px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    /* Para evitar que o texto saia da caixa */
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 button {
-  flex: 1;
-  height: 60px;
-  margin: 4px;
-  border: none;
-  outline: none;
-  background-color: #444;
-  color: #fff;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s ease;
+    flex: 1;
+    height: 60px;
+    margin: 4px;
+    border: none;
+    outline: none;
+    background-color: #444;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s;
 }
 
 button.operator {
-  background-color: #ff9500;
-  color: #fff;
+    background-color: #ff9500; /* Laranja */
+    color: #fff;
 }
 
 button:hover {
-  background-color: #666;
+    background-color: #666;
 }
 
 button.operator:hover {
-  background-color: #ffa733;
+    background-color: #ffa733;
 }
 
 button:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+/* Estilo para botão decimal desabilitado */
+#decimal[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 @media (max-width: 400px) {
-  .calculator {
-    width: 90%;
-  }
-  #inputBox {
-    font-size: 1.6rem;
-  }
+    .calculator {
+        width: 90%;
+    }
+    #inputBox {
+        font-size: 1.6rem;
+    }
 }
