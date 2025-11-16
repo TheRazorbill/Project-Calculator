@@ -1,14 +1,14 @@
-# 🧮 Projeto: Calculadora Web
+#  Projeto: Calculadora Web
 
 Este projeto é a implementação de uma calculadora funcional na tela, criada como projeto final do Curso de Fundamentos (Foundations Course). Utiliza HTML, CSS e JavaScript puro para simular a lógica e o comportamento de uma calculadora padrão.
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * **HTML5:** Estrutura da calculadora e dos botões.
 * **CSS3:** Estilização da interface, tornando-a responsiva e agradável.
 * **JavaScript (ES6+):** Implementação de toda a lógica de estado, operações e manipulação de eventos (cliques e teclado).
 
-## ✨ Funcionalidades Implementadas
+##  Funcionalidades Implementadas
 
 O projeto foi desenvolvido para cumprir todos os requisitos do desafio, incluindo os "Gotchas" e os itens de "Crédito Extra".
 
@@ -29,7 +29,7 @@ O projeto foi desenvolvido para cumprir todos os requisitos do desafio, incluind
 * **Suporte a Decimais:** Adicionado o botão `.` (ponto decimal). A entrada é restrita a um único ponto por número.
 * **Suporte ao Teclado:** A calculadora pode ser operada usando o teclado do computador para números, operadores e ações (Enter/=/Backspace/C).
 
-## 🚀 Como Executar o Projeto
+##  Como Executar o Projeto
 
 1.  **Clone o repositório** ou baixe os arquivos:
     ```bash
@@ -38,7 +38,7 @@ O projeto foi desenvolvido para cumprir todos os requisitos do desafio, incluind
 2.  **Navegue** até a pasta do projeto.
 3.  **Abra o arquivo `index.html`** no seu navegador (clique duas vezes ou use a extensão Live Server).
 
-## 🗺️ Roadmap de Versionamento (Histórico de Commits Sugerido)
+##  Roadmap de Versionamento (Histórico de Commits Sugerido)
 
 Este projeto foi construído seguindo um fluxo de trabalho modular com foco em commits atômicos (utilizando a convenção [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)).
 
